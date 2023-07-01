@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #000a1f;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+/* -------- COMMONS -------- */
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide-font {
+    color: #000a1f;
+    text-shadow: 0px 0 #686868;
+    font-size: 15rem;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    width: 550px;
+    color: #fff;
+    font-size: 42px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0.42px;
+}
+
+.desc {
+    color: #a8adb3;
+    font-size: 1.6rem;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+/* HEADER */
+.header {
+    background-color: #000a1f;
+    position: sticky;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
+}
+
+.header .nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    margin: 0 120px;
+}
+
+.header .nav-bar ul a {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 8px 25px;
+}
+
+.header .nav-bar .fa-solid {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* HERO */
+.hero-wrap {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #000a1f 0%, #001030 100%);
+    height: calc(100vh - 90px);
+    position: relative;
+}
+
+.hero {
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+}
+
+.hero-title {
+    width: 50%;
+}
+
+.hero .hero-subtitle {
+    color: #fff;
+    font-size: 7.5rem;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.75px;
+    text-transform: capitalize;
+}
+
+.hero-desc {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.hero-img {
+    width: 52%;
+    position: absolute;
+    right: 0;
+    bottom: -140px;
+}
+
+.hero-cloud {
+    position: absolute;
+    opacity: 90%;
+    width: 278px;
+}
+
+.hero-background img:nth-child(1) {
+    position: absolute;
+    top: -120px;
+    left: -50px;
+}
+
+.hero-background img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+}
+
+.hero-background img:nth-child(3) {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+
+/* -------- CLIENTS -------- */
+/* BRAND */
+.clients {
+    margin-top: 200px;
+}
+
+.clients-title {
+    position: relative;
+}
+
+.brand-desc {
+    margin-left: 90px;
+}
+
+.clients-st {
+    position: absolute;
+    left: 40px;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.logo-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* FEATURES */
+.features {
+    margin-top: 200px;
+}
+
+.img-features {
+    width: 40%;
+}
+
+.about-features {
+    margin-top: 160px;
+    margin-left: 50px;
+}
+
+.mini-imgft {
+    width: 60px;
+    height: 60px;
+}
+
+.about-features .info {
+    margin-left: 16px;
+}
+
+.title-ft {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px;
+}
+
+.desc-ft {
+    width: 80%;
+    color: #67687a;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about-features .row:nth-child(2) {
+    margin-top: 80px;
+}
+
+/* WHO */
+.clients .who {
+    margin-top: 200px;
+}
+
+.who-info {
+    margin-top: 180px;
+    margin-left: 40px;
+}
+
+.box-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.box-info .box:nth-child(4),
+.box-info .box:nth-child(5) {
+    margin-top: 12px;
+}
+
+.who-info .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 18px;
+    border-radius: 5px;
+    background: #292738;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+.img-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+.box-desc {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 8px;
+}
+
+.who-img {
+    width: 45%;
+}
+
+/* -------- SERVICES -------- */
+.services {
+    margin-top: 200px;
+}
+
+.sv-title {
+    position: relative;
+}
+
+.hfont-2,
+.stitle-2 {
+    text-align: center;
+}
+
+.stitle-2 {
+    width: 700px;
+    margin: auto;
+}
+
+.wave-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services-img {
+    width: 40%;
+}
+
+.box-services {
+    margin-top: 30px;
+}
+
+.box-services .item {
+    margin-top: 16px;
+    border-radius: 8px;
+    background: #292738;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+}
+
+.sv-info {
+    width: 50%;
+}
+
+.sv-desc {
+    margin-top: 3px;
+}
+
+/* -------- PROJECTS -------- */
+.projects {
+    margin-top: 200px;
+}
+
+.stitle-3 {
+    width: 50%;
+}
+
+.project-box {
+    position: relative;
+    margin-top: 50px;
+}
+
+.project-box img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.pro-info {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.pro-name {
+    display: inline-block;
+    padding: 5px 36px;
+    background: linear-gradient(270deg, #186ef2 0%, #6d18ef 100%);
+    color: #fff;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.pro-jobs {
+    width: 75%;
+    padding: 20px 40px;
+    background: #292738;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px;
+}
+
+/* -------- ABOUT -------- */
+.about {
+    margin-top: 200px;
+}
+
+.img-fact {
+    width: 40%;
+}
+
+.row-2 {
+    align-items: center;
+}
+
+.achievement {
+    width: 300px;
+    margin: 32px 24px 0;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background: #292738;
+    box-shadow: 0px 0px 10px 0px rgba(6, 6, 6, 0.15) inset;
+}
+
+.qty-fact {
+    margin-top: 20px;
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.fact-name {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.says {
+    margin-top: 200px;
+}
+
+.comment {
+    background: #292738;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    margin: 56px 15px 0;
+    padding: 50px 70px;
+}
+
+.desc-says {
+    margin-top: 24px;
+    color: #67687a;
+    font-size: 22px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.author-info,
+.img-comment {
+    margin-top: 36px;
+}
+
+.author-name {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.8px;
+}
+
+.author-job {
+    color: #67687a;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.about-desc {
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.call {
+    margin-top: 200px;
+}
+
+.img-call {
+    width: 40%;
+}
+
+.title-call {
+    margin-left: 80px;
+}
+
+.form-says {
+    margin-top: 128px;
+    margin-left: 60px;
+}
+
+.form {
+    width: 500px;
+    padding: 16px;
+}
+
+.form-says input {
+    margin: 6px;
+    color: #a8adb3;
+    font-size: 16px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-says .yourmess {
+    padding-bottom: 100px;
+}
+
+.submit {
+    display: block;
+    margin-top: 16px;
+    margin-left: 6px;
+    height: 54px;
+    padding: 0 32px;
+    width: 33%;
+    border-radius: 4px;
+    background: var(--7, linear-gradient(270deg, #186ef2 0%, #6d18ef 100%));
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+/* -------- FOOTER -------- */
+.footer {
+    margin-top: 200px;
+}
+
+.follow {
+    margin-top: 60px;
+}
+
+.logo-social {
+    margin-top: 20px;
+}
+
+.social {
+    padding: 2px;
+}
+
+.logo-social img:first-child {
+    padding-left: 0;
+}
+
+.footer-info {
+    width: 25%;
+}
+.footer-info h2 {
+    margin-bottom: 26px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: 0.22px;
+}
+
+.footer-info li,
+.mail-add {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.footer-info h3 {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.mail-add {
+    margin: 0;
+    margin-left: 10px;
+}
+.email-address {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-envelope {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.signup {
+    background: #000;
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.copyright {
+    margin-top: 110px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 16px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.info-more {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-footer {
+    margin: 110px 24px 10px;
+}
+
+.info-footer:last-child {
+    margin-right: 0;
+}
